@@ -25,6 +25,5 @@ $(call inherit-product, device/motorola/condor/device.mk)
 
 PRODUCT_NAME := full_condor
 PRODUCT_DEVICE := condor
-PRODUCT_BRAND := motorola
-PRODUCT_MODEL := condor
-PRODUCT_MANUFACTURER := motorola
+# Inherit Motorola vendor
+$(call inherit-product-if-exists, vendor/motorola/condor/condor-vendor.mk)
