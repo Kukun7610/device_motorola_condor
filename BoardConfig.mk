@@ -22,6 +22,7 @@ LOCAL_PATH := device/motorola/condor
 # Kernel
 TARGET_KERNEL_CONFIG := cm_condor_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8610
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 # TARGET_KERNEL_CROSS_COMPILE_PREFIX :=/UBERTC/arm-linux-androideabi-5.3/bin/arm-linux-androideabi-
 
 # Storage & partiiton
